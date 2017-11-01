@@ -20,7 +20,7 @@ int login(){
 		printf("PASSWORD: ");
 		scanf("%s",&p);
 		a=strcmp(u,user);
-      	b=strcmp(p,pass);
+      		b=strcmp(p,pass);
       	if(a==0&&b==0)
       	{
          	printf("\nLOGIN Berhasil.");
