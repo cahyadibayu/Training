@@ -2,7 +2,7 @@
 #include <conio.h>
 #include <stdlib.h>
 
-char user[]="bayu",pass[]="1234",u[10],p[10];
+char user[]="bayu",pass[]="1234",u[10],p[10]; // USERNAME : bayu, PASSWORD : 1234
 int n=1,a,b,c,d,input[100],count=0,pilih,pilih2,pilih3,pilih4,pilih5,y,i,j,m,r,x,z,mid,mean,median,modus,temp=0,max,frekuensi[100];
 
 int main(){
@@ -11,7 +11,7 @@ int main(){
 	menu();
 }
 
-int login(){
+int login(){ // Modular Login
 	while(n<=3){
 		system("cls");
 		printf("\n======LOGIN======\n\n");
@@ -43,7 +43,7 @@ int login(){
       
 }
 
-int inputdata(){
+int inputdata(){ // Modular Input Data
 	for(c=0;c<100;c++){
 		system("cls");
 		printf("\n======INPUT DATA======\n");
@@ -58,7 +58,7 @@ int inputdata(){
 	}
 }
 
-int kalkulator(){
+int kalkulator(){ //Modular Kalkulator Sederhana
 	system("cls");
 	printf("\n\n======Kalkulator Sederhana======\n");
 	printf("\nData Yang Telah Anda Masukkan : \n");
@@ -121,7 +121,7 @@ int kalkulator(){
 	}
 }
 
-int submenu2(){
+int submenu2(){ // Modular Mencari Mean,Median dan Modus
 	system("cls");
 	printf("\nData Yang Telah Anda Masukkan:\n\t");
 	display();
@@ -197,7 +197,7 @@ int submenu2(){
 		}
 }
 
-int submenu3(){
+int submenu3(){ //Modular Bubble Sorting
 	system("cls");
 	printf("\n\n====Sorting Data Dalam Array====\n\n");
 	printf("Data Sebelum Diurutkan : ");
@@ -224,7 +224,7 @@ int submenu3(){
 	}
 }
 
-int submenu4(){
+int submenu4(){ //Modular Hilang Duplikasi
 	system("cls");
 	printf("\n=====Menghilangkan Duplikasi=====\n\n");
 	printf("Data Sebelum Dihilangkan Duplikasinya : ");
@@ -256,7 +256,7 @@ int submenu4(){
 	}
 }
 
-int menu(){
+int menu(){ // Modular Menu Utama
 	system("cls");
 	printf("\nData :\n\t");
 	display();
@@ -282,7 +282,7 @@ int menu(){
 	}
 }
 
-int display(){
+int display(){ //Modular Menampilkan Input Data
 	for(i=0;i<count;i++){
             	printf("%d ",input[i]);
 			}
